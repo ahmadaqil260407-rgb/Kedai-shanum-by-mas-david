@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Kedai Shanum</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #9d0708; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #4a0002; 
+            border-bottom: 4px solid #ffcc00; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffcc00; 
+            text-decoration: none;
+        }
+        .navbar .menu-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .navbar .menu-links a {
+            text-decoration: none;
+            color: #ffffff; 
+            font-weight: 700; 
+            font-size: 1.05rem; 
+            letter-spacing: 0.5px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease; 
+        }
+        .navbar .menu-links a:hover {
+            color: #ffcc00;
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        
+        /* Tombol Order Sekarang di Kanan Navbar */
+        .btn-order-nav {
+            background-color: #ffcc00; 
+            color: #4a0002 !important; 
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background 0.3s;
+        }
+        .btn-order-nav:hover {
+            background-color: #ffffff;
+            color: #9d0708 !important;
+        }
+
+        .main-card {
+            background-color: #ffffff;
+            color: #222222;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+        .main-card h2 {
+            color: #9d0708; 
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .main-card h3 {
+            color: #4a0002;
+            font-size: 1.4rem;
+            margin-top: 30px;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 5px;
+        }
+        .main-card p {
+            font-size: 1.05rem;
+            color: #444444;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #2b0001; 
+            color: #bbbbbb;
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Kedai Shanum</a>
+        <ul class="menu-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#daftar-menu">Menu</a></li> 
+            <li><a href="tentang.html">Tentang</a></li> 
+            <li><a href="https://food.grab.com/id/en/restaurant/ayam-geprek-kedai-shanum-pk-4-delivery/6-C7DHSGCGNZCHKA?sourceID=20260618_225132_e13ad45b3f394bf09b03085d5d87c6d7_MEXMPS" target="_blank" class="btn-order-nav">Order Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-card">
+        <h2>Tentang Kedai Shanum</h2>
+        
+        <h3>Cerita Kami</h3>
+        <p>Tidak ada cerita cuman ayam geprek enak 😎</p>
+        
+        <h3>Kualitas Rasa Utama</h3>
+        <p>Iyo sesuai value</p>
+
+        <h3>Visi Kami</h3>
+        <p> Kaya raya dan rezeki lancar </p>
+    </div>
+
+    <footer>
+        <p>Lokasi: Jl. Perintis Kemerdekaan IV, Makassar (Sulawesi Selatan)</p>
+        <p>© 2026 Kedai Shanum. Tugas Akhir Komunikasi Digital.</p>
+    </footer>
+
+</body>
+</html>

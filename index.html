@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Shanum - Ayam Geprek Mas David</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #9d0708; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #4a0002; 
+            border-bottom: 4px solid #ffcc00; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffcc00; 
+            text-decoration: none;
+        }
+        .navbar .menu-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .navbar .menu-links a {
+            text-decoration: none;
+            color: #ffffff; 
+            font-weight: 700; 
+            font-size: 1.05rem; 
+            letter-spacing: 0.5px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: all 0.3s ease; 
+        }
+        .navbar .menu-links a:hover {
+            color: #ffcc00;
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+        .btn-order-nav {
+            background-color: #ffcc00; 
+            color: #4a0002 !important; 
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background 0.3s;
+        }
+        .btn-order-nav:hover {
+            background-color: #ffffff;
+            color: #9d0708 !important;
+        }
+
+        .hero-section {
+            padding: 40px 10px 20px 10px;
+            text-align: center;
+        }
+        .banner-img {
+            width: 100%;
+            max-width: 850px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .main-card {
+            background-color: #ffffff;
+            color: #222222;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .main-card h2 {
+            color: #9d0708; 
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .lead-text {
+            font-size: 1.1rem;
+            color: #555555;
+            margin-bottom: 30px;
+        }
+
+        .btn-grab {
+            display: inline-block;
+            background-color: #00b14f;
+            color: white;
+            text-decoration: none;
+            padding: 14px 35px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 177, 79, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+            margin-bottom: 20px;
+        }
+        .btn-grab:hover {
+            background-color: #009642;
+            transform: translateY(-2px);
+        }
+
+        .separator {
+            border: 0;
+            border-top: 2px dashed #e0e0e0;
+            margin: 40px 0;
+        }
+
+        .main-card h3 {
+            color: #9d0708; 
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+        }
+
+        .menu-table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            border-collapse: collapse;
+            background: #fffdf9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border: 1px solid #f0e6cc;
+        }
+        .menu-table th {
+            background-color: #9d0708; 
+            color: #ffcc00;
+            padding: 12px 20px;
+            text-align: left;
+            font-size: 1.05rem;
+        }
+        .menu-table td {
+            padding: 12px 20px;
+            text-align: left;
+            border-bottom: 1px solid #f0e6cc;
+            color: #333333;
+        }
+        .menu-table tr:last-child td {
+            border-bottom: none;
+        }
+        .menu-table tr:nth-child(even) {
+            background-color: #fdfaf2;
+        }
+
+        footer {
+            background-color: #2b0001; 
+            color: #bbbbbb;
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Kedai Shanum</a>
+        <ul class="menu-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#daftar-menu">Menu</a></li> 
+            <li><a href="tentang.html">Tentang</a></li> 
+            <li><a href="https://food.grab.com/id/en/restaurant/ayam-geprek-kedai-shanum-pk-4-delivery/6-C7DHSGCGNZCHKA?sourceID=20260618_225132_e13ad45b3f394bf09b03085d5d87c6d7_MEXMPS" target="_blank" class="btn-order-nav">Order Sekarang</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <img src="banner.png" alt="Banner Ayam Geprek Kedai Shanum" class="banner-img">
+    </div>
+
+    <div class="main-card">
+        <h2>Selamat Datang di Kedai Shanum "By Mas David"!</h2>
+        <p class="lead-text">Lagi mager di kosan daerah Perintis Kemerdekaan dan pengen ayam geprek yang crispy, gurih, plus pedasnya nampol? Kedai Shanum solusinya! Kami menyajikan varian Ayam Geprek berkualitas dengan harga yang sangat ramah untuk kantong mahasiswa.</p>
+        
+        <a href="https://food.grab.com/id/en/restaurant/ayam-geprek-kedai-shanum-pk-4-delivery/6-C7DHSGCGNZCHKA?sourceID=20260618_225132_e13ad45b3f394bf09b03085d5d87c6d7_MEXMPS" target="_blank" class="btn-grab">Pesan Lewat GrabFood Sekarang</a>
+
+        <hr class="separator">
+
+        <h3 id="daftar-menu">Daftar Menu Andalan Kami</h3>
+        
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Menu Paketan (Hemat &amp; Kenyang)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paket Ayam + Nasi + Es Teh</td>
+                    <td><strong>Rp 15.000</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Ala Carte (Satuan)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ayam Geprek</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td>Ayam Crispy</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td>Hati &amp; Ampela</td>
+                    <td>Rp 2.000 / pcs</td>
+                </tr>
+                <tr>
+                    <td>Ceker Goreng</td>
+                    <td>Rp 1.000</td>
+                </tr>
+                <tr>
+                    <td>Kremesan</td>
+                    <td>Rp 2.500</td>
+                </tr>
+                <tr>
+                    <td>Nasi Putih</td>
+                    <td>Rp 5.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th colspan="2">Beverage (Minuman Segar)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Es Teh</td>
+                    <td>Rp 5.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Lokasi: Jl. Perintis Kemerdekaan IV, Makassar (Sulawesi Selatan)</p>
+        <p>© 2026 Kedai Shanum. Tugas Akhir Komunikasi Digital.</p>
+    </footer>
+
+</body>
+</html>
